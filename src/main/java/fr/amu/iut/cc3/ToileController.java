@@ -1,5 +1,6 @@
 package fr.amu.iut.cc3;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -19,10 +20,22 @@ public class ToileController implements Initializable {
     private static int angleDepart = 90;
     private static int noteMaximale = 20;
 
+    @FXML
+    private Label valeur;
+
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+    @FXML
+    public void ClickTracer(){
+        if(valeur.equals(0)){
 
+        }
+    }
+    @FXML
+    public void ClickVider(){
+        Platform.exit();
+    }
 
     int getXRadarChart(double value, int axe ){
         return (int) (rayonCercleExterieur + Math.cos(Math.toRadians(angleDepart - (axe-1)  * angleEnDegre)) * rayonCercleExterieur
@@ -35,5 +48,3 @@ public class ToileController implements Initializable {
     }
 
 }
-
-//dimension 420 650

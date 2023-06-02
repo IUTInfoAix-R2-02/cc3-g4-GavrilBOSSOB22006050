@@ -12,18 +12,8 @@ import java.io.IOException;
 
 public class ToileApp extends Application {
 
-    private Button Tracer;
-
-    public ToileApp(){
-
-        Tracer = new Button();
-    }
 
     public void start(Stage primaryStage) throws IOException {
-
-
-        Tracer.addEventHandler(MouseEvent.MOUSE_CLICKED, actionEvent -> {
-        });
 
         Parent root = FXMLLoader.load(getClass().getResource("toile.fxml"));
         primaryStage.setResizable(false);
