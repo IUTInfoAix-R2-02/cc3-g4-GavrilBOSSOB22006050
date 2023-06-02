@@ -13,7 +13,14 @@
 <?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.GridPane?>
-<HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<HBox id="scene" prefHeight="420.0" prefWidth="850.0" spacing="20.0" style="-fx-background-color: LIGHTBLUE" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
     <Pane prefHeight="400.0" prefWidth="400.0" >
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile"/>
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile"/>
@@ -34,10 +41,58 @@
         <Text x="26" y="99" text="Compétence 6" />
         <Pane fx:id="toile" styleClass="toile"/>
     </Pane>
-    <HBox alignment="CENTER_RIGHT" spacing="10" >
-        <Label fx:id="text1" text="Compétence 1 - Réaliser" ></Label>
-        <TextField promptText="0" ></TextField>
-        <Label fx:id="text2" text="Compétence 2 - Optimiser"></Label>
-        <TextField promptText="0"></TextField>
+    <VBox alignment="CENTER_RIGHT">
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Label alignment="CENTER_RIGHT" prefHeight="20" prefWidth="300" text="Compétence 1 - Réaliser" >
+                <font>
+                    <Font size="12"></Font>
+                </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" prefHeight="20" prefWidth="100"></TextField>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Label alignment="CENTER_RIGHT" prefHeight="20" prefWidth="300" text="Compétence 2 - Optimiser" >
+                <font>
+                    <Font size="12"></Font>
+                </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" prefHeight="20" prefWidth="100"></TextField>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Label alignment="CENTER_RIGHT" prefHeight="20" prefWidth="300" text="Compétence 3 - Administrer" >
+                <font>
+                    <Font size="12"></Font>
+                </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" prefHeight="20" prefWidth="100"></TextField>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Label alignment="CENTER_RIGHT" prefHeight="20" prefWidth="300"  text="Compétence 4 - Gérer" >
+                <font>
+                    <Font size="12"></Font>
+                </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" prefHeight="20" prefWidth="100"></TextField>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Label alignment="CENTER_RIGHT" prefHeight="20" prefWidth="300" text="Compétence 5 - Conduire" >
+                <font>
+                    <Font size="12"></Font>
+                </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" prefHeight="20" prefWidth="100"></TextField>
+        </HBox>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <Label alignment="CENTER_RIGHT" prefHeight="20" prefWidth="300"  text="Compétence 6 - Collaborer">
+                <font>
+                    <Font size="12"></Font>
+                </font>
+            </Label>
+            <TextField alignment="CENTER_RIGHT" prefHeight="20" prefWidth="100"></TextField>
+        </HBox>
+    </VBox>
+    <HBox alignment="BOTTOM_RIGHT" spacing="20">
+        <Button prefHeight="20" prefWidth="100" text="Tracer"></Button>
+        <Button prefHeight="20" prefWidth="100" text="Vider"></Button>
     </HBox>
 </HBox>

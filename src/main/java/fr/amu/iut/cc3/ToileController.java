@@ -3,6 +3,7 @@ package fr.amu.iut.cc3;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.layout.HBox;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -16,14 +17,8 @@ public class ToileController implements Initializable {
     private static int angleDepart = 90;
     private static int noteMaximale = 20;
 
-    @FXML
-    private Label text1;
-    @FXML
-    private Label text2;
-
-
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        text1.setText( text1.getText()+"\n"+ text2.getText() );
+
     }
 
     int getXRadarChart(double value, int axe ){
